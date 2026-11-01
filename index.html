@@ -2,166 +2,66 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mohammed Abdelati | Journal</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Cairo:wght@400;600;700&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#11100e">
+<meta name="description" content="Mohammed Abdelati — A journal of philosophy, history, ideas and independent thought.">
+<title>Mohammed Abdelati — Journal</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#11100e;--panel:#191714;--gold:#c6a56b;--white:#f1ece2;--muted:#aaa092;--line:rgba(226,207,170,.16)}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;line-height:1.7}
-a{color:inherit;text-decoration:none}
-.wrap{width:min(1100px,90%);margin:auto}
-header{position:sticky;top:0;background:#11100eed;border-bottom:1px solid var(--line);z-index:5}
-nav{height:78px;display:flex;align-items:center;justify-content:space-between}
-.logo{font:700 21px 'Playfair Display',serif}
-.logo span{color:var(--gold)}
-.links{display:flex;gap:28px;font-size:12px;letter-spacing:2px}
-.links a:hover{color:var(--gold)}
-button{background:transparent;color:var(--gold);border:1px solid var(--gold);padding:9px 14px;cursor:pointer}
-.hero{padding:75px 0}
-.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
-.tag{color:var(--gold);letter-spacing:4px;font-size:11px}
-h1{font:600 clamp(45px,6vw,75px)/1.1 'Playfair Display',serif;margin:22px 0}
-p{color:#bcb3a5}
-.hero p{font-size:16px;line-height:2}
-.btn{display:inline-block;background:var(--gold);color:#17130d;padding:13px 22px;margin-top:18px;font-size:12px;letter-spacing:2px}
-.photo{height:480px;position:relative;overflow:hidden;border:1px solid var(--gold)}
-.photo img{width:100%;height:100%;object-fit:cover;filter:sepia(.2) brightness(.8)}
-.photo small{position:absolute;bottom:12px;left:15px;color:white;background:#111a;padding:8px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0}
-.stat{text-align:center;color:var(--muted);font-size:11px;letter-spacing:2px}
-.stat strong{display:block;color:var(--gold);font:28px 'Playfair Display'}
-section{padding:75px 0}
-h2{font:600 42px 'Playfair Display';margin:10px 0 30px}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.card{background:var(--panel);border:1px solid var(--line);padding:27px;min-height:240px}
-.card:hover{border-color:var(--gold);transform:translateY(-4px);transition:.2s}
-.card small{color:var(--gold);letter-spacing:2px}
-.card h3{font:24px 'Playfair Display'}
-.card p{font-size:13px;line-height:1.9}
-.about{background:#191714;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.about-grid{display:grid;grid-template-columns:1fr 2fr;gap:40px}
-.initials{font:75px 'Playfair Display';color:var(--gold)}
-.socials{display:flex;gap:14px;flex-wrap:wrap;margin-top:25px}
-.socials a{border:1px solid var(--gold);padding:12px 20px;font-size:12px}
-.socials a:hover{background:var(--gold);color:#111}
-.quote{text-align:center;padding:85px 0}
-.quote blockquote{font:35px 'Playfair Display';max-width:750px;margin:20px auto}
-footer{border-top:1px solid var(--line);padding:25px 0;color:var(--muted);font-size:11px;text-align:center}
-[dir=rtl] body{font-family:'Cairo',sans-serif}
-[dir=rtl] .hero-grid,[dir=rtl] .about-grid{direction:rtl}
-[dir=rtl] .links{letter-spacing:0}
-@media(max-width:750px){
-.links{gap:12px;font-size:10px}
-nav{height:68px}
-.hero-grid,.about-grid{grid-template-columns:1fr}
-.hero{padding:45px 0}
-.photo{height:350px}
-.cards{grid-template-columns:1fr}
-h1{font-size:52px}
-h2{font-size:34px}
-.quote blockquote{font-size:27px}
-}
+:root{--bg:#11100e;--panel:#191714;--panel2:#211e19;--ink:#f1ece2;--muted:#aaa092;--gold:#c6a56b;--line:rgba(226,207,170,.16);--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--arabic:'Cairo',Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+.topline{border-bottom:1px solid var(--line);color:var(--muted);font-size:11px;letter-spacing:.22em;text-transform:uppercase}.topline .wrap{display:flex;justify-content:space-between;padding:12px 0}
+header{position:sticky;top:0;z-index:10;background:rgba(17,16,14,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{font-family:var(--serif);font-size:21px;letter-spacing:.04em}.brand span{color:var(--gold)}.navlinks{display:flex;align-items:center;gap:30px;color:#c8c0b3;font-size:12px;letter-spacing:.12em;text-transform:uppercase}.navlinks a:hover{color:var(--gold)}.rightnav{display:flex;align-items:center;gap:18px}.lang{border:1px solid var(--line);background:transparent;color:var(--ink);padding:9px 13px;border-radius:2px;cursor:pointer;font:600 11px var(--sans);letter-spacing:.12em}.menu{display:none;background:none;border:0;color:var(--ink);font-size:24px}
+.hero{padding:66px 0 78px}.hero-grid{display:grid;grid-template-columns:1fr 1.04fr;gap:58px;align-items:center}.eyebrow{color:var(--gold);font-size:11px;letter-spacing:.28em;text-transform:uppercase;display:flex;align-items:center;gap:12px}.eyebrow:before{content:"";width:34px;height:1px;background:var(--gold)}h1{font:600 clamp(48px,6.5vw,82px)/1.02 var(--serif);letter-spacing:-.04em;margin:25px 0 22px;max-width:590px}.hero p{color:#bcb3a5;font-size:16px;max-width:490px;line-height:1.9;margin:0 0 32px}.goldbtn{display:inline-flex;align-items:center;gap:22px;background:var(--gold);color:#17130d;padding:14px 20px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;transition:.2s}.goldbtn:hover{background:#dfc18a;transform:translateY(-2px)}.goldbtn b{font-size:17px}.hero-art{position:relative;min-height:500px;background:#28231c;overflow:hidden;border:1px solid rgba(198,165,107,.28)}.hero-art img{width:100%;height:500px;object-fit:cover;object-position:center 25%;display:block;filter:sepia(.18) saturate(.8) brightness(.83)}.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(17,16,14,.18),transparent 50%),linear-gradient(0deg,rgba(17,16,14,.55),transparent 55%);pointer-events:none}.art-caption{position:absolute;z-index:1;bottom:18px;left:20px;color:#eee1c8;font-size:10px;letter-spacing:.17em;text-transform:uppercase}.art-index{position:absolute;z-index:1;top:18px;right:18px;border:1px solid rgba(255,255,255,.4);padding:8px 11px;color:#fff;font-size:10px;letter-spacing:.18em}
+.rule{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.stats{display:grid;grid-template-columns:repeat(3,1fr)}.stat{padding:24px 20px;border-right:1px solid var(--line)}.stat:first-child{padding-left:0}.stat:last-child{border:0}.stat strong{display:block;color:var(--gold);font:500 26px var(--serif)}.stat span{color:var(--muted);font-size:10px;letter-spacing:.18em;text-transform:uppercase}
+section{padding:88px 0}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:34px;gap:20px}.section-head h2{font:600 clamp(32px,4vw,46px) var(--serif);margin:8px 0 0}.section-head p{color:var(--muted);font-size:13px;max-width:340px;margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);padding:28px;min-height:250px;display:flex;flex-direction:column;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(198,165,107,.55);background:var(--panel2)}.card .num{color:var(--gold);font:italic 16px var(--serif);margin-bottom:35px}.card h3{font:600 24px/1.2 var(--serif);margin:0 0 12px}.card p{color:var(--muted);font-size:13px;line-height:1.8;margin:0 0 24px}.card a{margin-top:auto;color:var(--gold);font-size:10px;letter-spacing:.16em;text-transform:uppercase}
+.about{background:#171512;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:80px;align-items:start}.about-mark{font:600 76px/.9 var(--serif);color:var(--gold);opacity:.9}.about-copy h2{font:600 42px var(--serif);margin:0 0 20px}.about-copy p{color:#bcb3a5;max-width:680px;line-height:2;font-size:15px}.socials{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.socials a{border:1px solid var(--line);padding:12px 17px;color:#e8dfd1;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.socials a:hover{border-color:var(--gold);color:var(--gold)}
+.quote{padding:95px 0;text-align:center}.quote blockquote{font:500 clamp(28px,4vw,45px)/1.35 var(--serif);max-width:850px;margin:20px auto;color:#e8dfd1}.quote small{color:var(--gold);letter-spacing:.2em;text-transform:uppercase;font-size:10px}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:11px;letter-spacing:.08em}.foot{display:flex;justify-content:space-between;gap:20px;align-items:center}.foot strong{font:500 17px var(--serif);color:var(--ink)}
+[dir=rtl] body,[dir=rtl] .hero-copy,[dir=rtl] .about-copy{font-family:var(--arabic)}[dir=rtl] .eyebrow{letter-spacing:0}[dir=rtl] .eyebrow:before{display:none}[dir=rtl] .eyebrow:after{content:"";width:34px;height:1px;background:var(--gold)}[dir=rtl] .hero-art .art-caption{left:auto;right:20px}[dir=rtl] .art-index{right:auto;left:18px}[dir=rtl] .navlinks{letter-spacing:0}[dir=rtl] .lang{letter-spacing:0}
+@media(max-width:800px){.wrap{width:min(100% - 32px,600px)}.nav{height:70px}.navlinks{display:none;position:absolute;top:70px;left:0;right:0;background:#171512;padding:22px 24px;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.menu{display:block}.hero{padding:42px 0 55px}.hero-grid{grid-template-columns:1fr;gap:32px}.hero-art,.hero-art img{height:370px;min-height:370px}.hero-copy{order:0}.hero-art{order:1}h1{font-size:56px}.cards{grid-template-columns:1fr}.card{min-height:210px}.about-grid{grid-template-columns:1fr;gap:28px}.about-mark{font-size:55px}.section-head{align-items:start;flex-direction:column}.stats .stat{padding:18px 12px}.stat strong{font-size:22px}.stat span{font-size:8px}.foot{align-items:flex-start;flex-direction:column}.topline .wrap{font-size:9px}}
 </style>
 </head>
 <body>
-<header>
-<div class="wrap">
-<nav>
-<a class="logo" href="#">MOHAMMED <span>ABDELATI</span></a>
-<div class="links">
-<a href="#journal" data-en="JOURNAL" data-ar="المقالات">JOURNAL</a>
-<a href="#about" data-en="ABOUT" data-ar="عني">ABOUT</a>
-<a href="#contact" data-en="CONTACT" data-ar="تواصل">CONTACT</a>
-</div>
-<button id="language">العربية</button>
-</nav>
-</div>
-</header>
-
+<div class="topline"><div class="wrap"><span data-en="An independent journal" data-ar="مجلة فكرية مستقلة">An independent journal</span><span>EST. MMXXVI · TRIPOLI</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#">MOHAMMED <span>ABDELATI</span></a>
+<nav class="navlinks" id="navlinks"><a href="#journal" data-en="Journal" data-ar="المقالات">Journal</a><a href="#about" data-en="About" data-ar="عنّي">About</a><a href="#connect" data-en="Connect" data-ar="تواصل">Connect</a></nav>
+<div class="rightnav"><button class="lang" id="langBtn" type="button">العربية</button><button class="menu" id="menuBtn" aria-label="Open menu">☰</button></div>
+</div></header>
 <main>
-<section class="hero">
-<div class="wrap hero-grid">
-<div>
-<div class="tag" data-en="PHILOSOPHY · HISTORY · IDEAS" data-ar="فلسفة · تاريخ · أفكار">PHILOSOPHY · HISTORY · IDEAS</div>
-<h1 data-en="Ideas that outlive their time." data-ar="أفكار تعبر حدود الزمن.">Ideas that outlive their time.</h1>
-<p data-en="A personal journal exploring philosophy, history, politics and the ideas that shape our world." data-ar="مجلة شخصية تستكشف الفلسفة والتاريخ والسياسة والأفكار التي تشكّل عالمنا.">A personal journal exploring philosophy, history, politics and the ideas that shape our world.</p>
-<a class="btn" href="#journal" data-en="EXPLORE THE JOURNAL ↗" data-ar="اكتشف المجلة ↗">EXPLORE THE JOURNAL ↗</a>
+<section class="hero"><div class="wrap hero-grid">
+<div class="hero-copy">
+<div class="eyebrow" data-en="Philosophy · History · Ideas" data-ar="فلسفة · تاريخ · أفكار">Philosophy · History · Ideas</div>
+<h1 data-en="Ideas that outlive their time." data-ar="أفكارٌ تعبرُ حدودَ الزمن.">Ideas that outlive their time.</h1>
+<p data-en="A personal journal exploring the questions that shape human thought, the events that shape nations, and the ideas that challenge the present." data-ar="مساحة شخصية لاستكشاف الأسئلة التي تشكّل الفكر الإنساني، والأحداث التي تصنع الأمم، والأفكار التي تتحدى الحاضر.">A personal journal exploring the questions that shape human thought, the events that shape nations, and the ideas that challenge the present.</p>
+<a class="goldbtn" href="#journal"><span data-en="Explore the journal" data-ar="اكتشف المجلة">Explore the journal</span><b>↗</b></a>
 </div>
-<div class="photo">
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Plato_and_Aristotle_in_The_School_of_Athens%2C_by_italian_Rafael.jpg" alt="Plato and Aristotle">
-<small>RAPHAEL · THE SCHOOL OF ATHENS · 1509</small>
-</div>
-</div>
-</section>
-
-<div class="wrap stats">
-<div class="stat"><strong>01</strong>INDEPENDENT THOUGHT</div>
-<div class="stat"><strong>02</strong>PAST & PRESENT</div>
-<div class="stat"><strong>∞</strong>ENDLESS QUESTIONS</div>
-</div>
-
-<section id="journal">
-<div class="wrap">
-<div class="tag" data-en="SELECTED SUBJECTS" data-ar="موضوعات مختارة">SELECTED SUBJECTS</div>
-<h2 data-en="The Journal" data-ar="دفتر الأفكار">The Journal</h2>
+<div class="hero-art"><img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Plato_and_Aristotle_in_The_School_of_Athens%2C_by_italian_Rafael.jpg" alt="Plato and Aristotle in Raphael's School of Athens"><span class="art-index">01 / THE CLASSICS</span><span class="art-caption">Raphael · The School of Athens · 1509</span></div>
+</div></section>
+<div class="wrap rule"><div class="stats"><div class="stat"><strong>01</strong><span data-en="Independent thought" data-ar="فكر مستقل">Independent thought</span></div><div class="stat"><strong>02</strong><span data-en="Past & present" data-ar="الماضي والحاضر">Past & present</span></div><div class="stat"><strong>∞</strong><span data-en="Questions to explore" data-ar="أسئلة لا تنتهي">Questions to explore</span></div></div></div>
+<section id="journal"><div class="wrap">
+<div class="section-head"><div><div class="eyebrow" data-en="Selected subjects" data-ar="موضوعات مختارة">Selected subjects</div><h2 data-en="The Journal" data-ar="دفتر الأفكار">The Journal</h2></div><p data-en="Notes, reflections and explorations across philosophy, history and society." data-ar="ملاحظات وتأملات وقراءات في الفلسفة والتاريخ والمجتمع.">Notes, reflections and explorations across philosophy, history and society.</p></div>
 <div class="cards">
-<article class="card">
-<small>01 — PHILOSOPHY</small>
-<h3 data-en="The question of freedom" data-ar="سؤال الحرية">The question of freedom</h3>
-<p data-en="Are our choices truly our own, or are they shaped by forces we rarely notice?" data-ar="هل اختياراتنا نابعة منا حقاً، أم تصوغها قوى لا ننتبه إليها؟">Are our choices truly our own, or are they shaped by forces we rarely notice?</p>
-</article>
-<article class="card">
-<small>02 — HISTORY</small>
-<h3 data-en="Libya: memory and identity" data-ar="ليبيا: الذاكرة والهوية">Libya: memory and identity</h3>
-<p data-en="Exploring the people and events that shaped Libya's history." data-ar="استكشاف الشخصيات والأحداث التي صنعت تاريخ ليبيا.">Exploring the people and events that shaped Libya's history.</p>
-</article>
-<article class="card">
-<small>03 — IDEAS</small>
-<h3 data-en="The individual and society" data-ar="الفرد والمجتمع">The individual and society</h3>
-<p data-en="How do power, culture and belief influence our world?" data-ar="كيف تؤثر السلطة والثقافة والمعتقد في عالمنا؟">How do power, culture and belief influence our world?</p>
-</article>
-</div>
-</div>
-</section>
-
-<section class="about" id="about">
-<div class="wrap about-grid">
-<div><div class="tag" data-en="THE AUTHOR" data-ar="صاحب المجلة">THE AUTHOR</div><div class="initials">MA.</div></div>
-<div>
-<h2 data-en="A mind in progress." data-ar="عقل في طور التشكّل.">A mind in progress.</h2>
-<p data-en="I am Mohammed Abdelati. This journal is a space for curiosity, critical thinking and the study of history. I write about philosophy, Libya, Arab history and the questions that connect our past to our future." data-ar="أنا محمد عبدالعاطي. هذه المجلة مساحة للفضول والتفكير النقدي ودراسة التاريخ. أكتب عن الفلسفة وليبيا والتاريخ العربي والأسئلة التي تصل ماضينا بمستقبلنا.">I am Mohammed Abdelati. This journal is a space for curiosity, critical thinking and the study of history. I write about philosophy, Libya, Arab history and the questions that connect our past to our future.</p>
-<div class="socials" id="contact">
-<a href="https://x.com/w4_mn7?s=11" target="_blank">X / TWITTER ↗</a>
-<a href="https://www.tiktok.com/@historicae" target="_blank">TIKTOK ↗</a>
-</div>
-</div>
-</div>
-</section>
-
-<section class="quote">
-<div class="wrap">
-<div class="tag" data-en="A NOTE ON THINKING" data-ar="ملاحظة في التفكير">A NOTE ON THINKING</div>
-<blockquote data-en="“The important thing is not to stop questioning.”" data-ar="«الأهم ألّا نتوقف عن طرح الأسئلة.»">“The important thing is not to stop questioning.”</blockquote>
-<small style="color:var(--gold)">— ALBERT EINSTEIN</small>
-</div>
-</section>
+<article class="card"><div class="num">01 — PHILOSOPHY</div><h3 data-en="The question of freedom" data-ar="سؤال الحرية">The question of freedom</h3><p data-en="Are our choices truly our own, or are they shaped by forces we rarely notice?" data-ar="هل اختياراتنا نابعة منا حقاً، أم تصوغها قوى لا ننتبه إليها؟">Are our choices truly our own, or are they shaped by forces we rarely notice?</p><a href="https://x.com/w4_mn7" target="_blank" rel="noopener" data-en="Read reflections ↗" data-ar="اقرأ التأملات ↗">Read reflections ↗</a></article>
+<article class="card"><div class="num">02 — HISTORY</div><h3 data-en="Libya: memory & identity" data-ar="ليبيا: الذاكرة والهوية">Libya: memory & identity</h3><p data-en="A look at the people, turning points and ideas that have shaped Libya's story." data-ar="قراءة في الشخصيات والمنعطفات والأفكار التي ساهمت في تشكيل الحكاية الليبية.">A look at the people, turning points and ideas that have shaped Libya's story.</p><a href="https://www.tiktok.com/@historicae" target="_blank" rel="noopener" data-en="Explore stories ↗" data-ar="اكتشف القصص ↗">Explore stories ↗</a></article>
+<article class="card"><div class="num">03 — IDEAS</div><h3 data-en="The individual & society" data-ar="الفرد والمجتمع">The individual & society</h3><p data-en="How do power, culture and belief influence the way we see the world?" data-ar="كيف تؤثر السلطة والثقافة والمعتقد في الطريقة التي نرى بها العالم؟">How do power, culture and belief influence the way we see the world?</p><a href="https://x.com/w4_mn7" target="_blank" rel="noopener" data-en="Discover ideas ↗" data-ar="اكتشف الأفكار ↗">Discover ideas ↗</a></article>
+</div></div></section>
+<section class="about" id="about"><div class="wrap about-grid"><div><div class="eyebrow" data-en="The author" data-ar="صاحب المجلة">The author</div><div class="about-mark">MA.</div></div><div class="about-copy"><h2 data-en="A mind in progress." data-ar="عقلٌ في طور التشكّل.">A mind in progress.</h2><p data-en="I am Mohammed Abdelati. This journal is a space for curiosity, critical thinking and the study of history. I write about philosophy, Libya, Arab history and the questions that connect our past to our future." data-ar="أنا محمد عبدالعاطي. هذه المجلة مساحة للفضول والتفكير النقدي ودراسة التاريخ. أكتب عن الفلسفة وليبيا والتاريخ العربي، وعن الأسئلة التي تصل ماضينا بمستقبلنا.">I am Mohammed Abdelati. This journal is a space for curiosity, critical thinking and the study of history. I write about philosophy, Libya, Arab history and the questions that connect our past to our future.</p>
+<div class="socials" id="connect"><a href="https://x.com/w4_mn7?s=11" target="_blank" rel="noopener">X / Twitter ↗</a><a href="https://www.tiktok.com/@historicae" target="_blank" rel="noopener">TikTok ↗</a></div>
+</div></div></section>
+<section class="quote"><div class="wrap"><small data-en="A note on thinking" data-ar="ملاحظة في التفكير">A note on thinking</small><blockquote data-en="“The important thing is not to stop questioning.”" data-ar="«الأهمّ ألّا نتوقف عن طرح الأسئلة.»">“The important thing is not to stop questioning.”</blockquote><small>— ALBERT EINSTEIN</small></div></section>
 </main>
-
-<footer>
-<div class="wrap">MOHAMMED ABDELATI · © 2026 · PHILOSOPHY · HISTORY · IDEAS</div>
-</footer>
-
+<footer><div class="wrap foot"><strong>MOHAMMED ABDELATI</strong><span>© 2026 · <span data-en="All thoughts reserved." data-ar="جميع الأفكار محفوظة.">All thoughts reserved.</span></span><span>PHILOSOPHY · HISTORY · IDEAS</span></div></footer>
 <script>
-let lang='en';
-document.getElementById('language').onclick=function(){
-lang=lang==='en'?'ar':'en';
-document.documentElement.lang=lang;
-document.documentElement.dir=lang==='ar'?'rtl':'ltr';
-document.querySelectorAll('[data-en]').forEach(el=>el.textContent=el.dataset[lang]);
-this.textContent=lang==='ar'?'ENGLISH':'العربية';
-};
+const root=document.documentElement,btn=document.getElementById('langBtn');
+let current='en';
+function setLang(lang){current=lang;const rtl=lang==='ar';root.lang=lang;root.dir=rtl?'rtl':'ltr';document.querySelectorAll('[data-en]').forEach(el=>{el.textContent=el.dataset[lang]});btn.textContent=rtl?'ENGLISH':'العربية';}
+btn.addEventListener('click',()=>setLang(current==='en'?'ar':'en'));
+document.getElementById('menuBtn').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
 </script>
 </body>
 </html>
